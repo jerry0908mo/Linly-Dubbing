@@ -70,6 +70,7 @@
 
 我们旨在为用户提供无缝、高质量的多语言视频配音和翻译服务，为内容创作者和企业在全球市场中提供有力支持。
 
+🔰: 前面带有🔰标志的段落是针对新手的介绍，老手根据情况自行忽略
 ---
 
 ## TO DO LIST
@@ -102,6 +103,10 @@
 - Python 3.10, PyTorch 2.3.1, CUDA 12.1
 - Python 3.10, PyTorch 2.3.1, CUDA 11.8
 
+🔰：特别留意版本号，CUDA的版本号跟显卡驱动的版本有关联关系，在[这里查看对应关系](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5)。如果驱动版本过旧，可以在[英伟达驱动官网]
+(https://www.nvidia.cn/drivers/lookup/)查找下载匹配的驱动。
+🔰：当前驱动版本号和升级方法可以查看[这里](https://dl.djicdn.com/downloads/DJI_Modify/Other/20240118/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8%E5%8D%87%E7%BA%A7%E6%8C%87%E5%8D%97.pdf)
+
 请按照以下步骤进行`Linly-Dubbing`的安装与配置。
 
 ### 1. 克隆代码仓库
@@ -121,10 +126,12 @@ git submodule update --init --recursive
 
 ### 2. 安装依赖环境
 
+🔰：下面步骤用到了 ''conda', 需要安装 Anaconda，官网地址：[https://www.anaconda.com/](https://www.anaconda.com/). Anaconda安装完成后，在点击Win图标后，搜索'Anaconda Prompt (miniconda3)'找到'Anaconda Prompt'程序，下面的操作在这个程序里面进行。
+
 在继续之前，请创建一个新的Python环境，并安装所需的依赖项。
 
 ```bash
-# 创建名为 'linly_dubbing' 的conda环境，并指定Python版本为3.10
+# 创建名为 'linly_dubbing' 的conda环境，并指定Python版本为 '3.10'
 conda create -n linly_dubbing python=3.10 -y
 
 # 激活新创建的环境
